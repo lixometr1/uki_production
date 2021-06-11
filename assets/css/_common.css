@@ -1,0 +1,7 @@
+.container {
+  @apply max-w-[1400px] mx-auto px-5.5 md:px-5.5;
+}
+
+body {
+  @apply font-main min-h-screen ;
+}
