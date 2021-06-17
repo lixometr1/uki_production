@@ -4,6 +4,6 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 // import style
 import 'swiper/css/swiper.css'
-export default defineNuxtPlugin((ctx) => {
+export default defineNuxtPlugin(ctx => {
   Vue.use(VueAwesomeSwiper /* { default options with global component } */)
 })

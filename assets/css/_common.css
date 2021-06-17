@@ -1,7 +1,65 @@
 .container {
-  @apply max-w-[1400px] mx-auto px-5.5 md:px-5.5;
+  @apply max-w-[625px] mx-auto px-5.5 md:px-5.5;
+}
+h1 {
+  @apply text-92 font-medium leading-none xl:text-76 sm:text-58;
+}
+h2 {
+  @apply text-[58px] sm:text-[36px] font-second;
+}
+h4 {
+  @apply text-22 xl:text-18 font-medium font-main;
+}
+body {
+  @apply font-main min-h-screen text-white text-16 xl:text-14 bg-bg;
 }
 
-body {
-  @apply font-main min-h-screen ;
+.page-container {
+  @apply px-[110px] xl:px-[80px];
+}
+
+h1,
+h2,
+h3 {
+  @apply font-second;
+}
+
+.slider-arrow {
+  @apply overflow-hidden relative h-[16px] flex-center px-1;
+  &::before {
+    content: '';
+    @apply block absolute top-1/2 transform -translate-y-1/2 w-[16px] h-[16px] bg-orange rounded-full
+         transition-all z-[-1];
+  }
+
+  &.prev {
+    &::before {
+      @apply left-auto right-0 translate-x-full;
+    }
+    &:hover {
+      &::before {
+        @apply translate-x-1/2 right-1/2;
+      }
+    }
+    &:active {
+      &::before {
+        @apply left-0 translate-x-0;
+      }
+    }
+  }
+  &.next {
+    &::before {
+      @apply left-0 -translate-x-full;
+    }
+    &:hover {
+      &::before {
+        @apply -translate-x-1/2 left-1/2;
+      }
+    }
+    &:active {
+      &::before {
+        @apply left-auto right-0 translate-x-0;
+      }
+    }
+  }
 }

@@ -28,5 +28,12 @@ module.exports = {
     'vue/max-attributes-per-line': 'off',
     curly: 'off',
     camelcase: 'off',
+    'prettier/prettier': [
+      'error',
+      {},
+      {
+        usePrettierrc: true,
+      },
+    ],
   },
 }

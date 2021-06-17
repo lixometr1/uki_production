@@ -69,35 +69,7 @@ export default {
     config: {},
   },
 
-  modules: [
-    '@nuxtjs/axios',
-    // 'nuxt-i18n',
-    '@nuxtjs/svg',
-    'cookie-universal-nuxt',
-  ],
-  i18n: {
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      // onlyOnRoot: true,
-    },
-    locales: [
-      {
-        iso: 'ru-RU',
-        code: 'ru',
-        file: 'ru.ts',
-      },
-      {
-        iso: 'ua-UA',
-        code: 'ua',
-        file: 'ua.ts',
-      },
-    ],
-    lazy: true,
-    langDir: 'lang/',
-    defaultLocale: 'ru',
-    seo: false,
-  },
+  modules: ['@nuxtjs/axios', '@nuxtjs/svg', 'cookie-universal-nuxt'],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
